@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.admin.activity.Home"
+    tools:ignore="MissingDefaultResource">
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical"
+            tools:context=".activity.MainActivity">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarAdmin"
+                app:title="Đức Hải Food - Admin"
+                app:titleTextColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#03A9F4"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+                        <Button
+
+                            android:id="@+id/btnAdminList"
+                            android:drawableTint="#fff"
+                            android:drawableTop="@drawable/ic_baseline_list_alt_24"
+                            android:textColor="#fff"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/manage_home_button"
+                            android:backgroundTint="#FF7F50"
+                            android:textAllCaps="false"
+                            android:textSize="30px"
+                            android:text="Danh sách món ăn" />
+
+                        <Button
+                            android:id="@+id/btnAdminAdd"
+                            android:drawableTint="#fff"
+                            android:drawableTop="@drawable/ic_baseline_add_circle_outline_24"
+                            android:textColor="#fff"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/manage_home_button"
+                            android:backgroundTint="#FF7F50"
+                            android:textAllCaps="false"
+                            android:textSize="30px"
+                            android:text="Thêm món ăn" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btnAdminOrder"
+                            android:drawableTint="#fff"
+                            android:drawableTop="@drawable/ic_baseline_post_add_24"
+                            android:textColor="#fff"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/manage_home_button"
+                            android:backgroundTint="#FF7F50"
+                            android:textAllCaps="false"
+                            android:textSize="30px"
+                            android:text="Đơn đặt hàng" />
+
+                        <Button
+                            android:id="@+id/btnMessage"
+                            android:drawableTint="#fff"
+                            android:drawableTop="@drawable/ic_baseline_comment_24"
+                            android:textColor="#fff"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/manage_home_button"
+                            android:backgroundTint="#FF7F50"
+                            android:textAllCaps="false"
+                            android:textSize="30px"
+                            android:text="Tin nhắn" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btn"
+                            android:drawableTint="#fff"
+                            android:drawableTop="@drawable/ic_baseline_post_add_24"
+                            android:textColor="#fff"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/manage_home_button"
+                            android:backgroundTint="#FF7F50"
+                            android:textAllCaps="false"
+                            android:textSize="30px"
+                            android:text="Đơn đặt hàng" />
+
+                        <Button
+                            android:id="@+id/btnAdminLogout"
+                            android:drawableTint="#fff"
+                            android:drawableTop="@drawable/ic_baseline_login_24"
+                            android:textColor="#fff"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/manage_home_button"
+                            android:backgroundTint="#FF7F50"
+                            android:textAllCaps="false"
+                            android:textSize="30px"
+                            android:text="Đăng xuất" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
+

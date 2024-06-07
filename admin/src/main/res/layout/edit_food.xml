@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditFood"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/editFood_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        app:title="Chi tiết món ăn"
+        app:titleTextColor="#fff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/ivPicFood"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:src="@drawable/bun_dau"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edtTenmon"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bún đậu mắm tôm"
+                android:textColor="#333"
+                android:textSize="40px"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá"
+                    android:textStyle="bold"
+                    android:textSize="30px"
+                    android:padding="10dp"
+                    android:textColor="#03A9F4"/>
+                <EditText
+                    android:id="@+id/edtGiatien"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textSize="30px"
+                    android:text="45.000"
+                    android:textStyle="bold"
+                    android:textColor="#03A9F4"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:textColor="#ccc"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:textStyle="italic"
+            android:text="Tóm tắt thông tin món ăn"/>
+        <EditText
+            android:id="@+id/edtThongtinTomtat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="30px"
+            android:paddingLeft="20dp"
+            android:layout_gravity="left"
+            android:paddingRight="20dp"
+            android:text="Information 1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:textColor="#ccc"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            android:textStyle="italic"
+            android:text="Thông tin chi tiết về món ăn"/>
+        <EditText
+            android:id="@+id/edtThongtinChitiet"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="30px"
+            android:text="Bún đậu mắm tôm là món ăn đơn giản, dân dã trong ẩm thực miền Bắc Việt Nam. Đây là món thường được dùng như bữa ăn nhẹ, ăn chơi. Thành phần chính gồm có bún tươi, đậu hũ chiên vàng, chả cốm, nem chua, mắm tôm pha chanh, ớt và ăn kèm với các loại rau thơm như tía tô, kinh giới, rau húng, xà lách, cà pháo ..."
+            android:textColor="#333"/>
+    </LinearLayout>
+
+</LinearLayout>

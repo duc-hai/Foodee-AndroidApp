@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/Search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView">
+    </item>
+    <item android:id="@+id/Cart"
+        android:title="Cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:iconTint="#44536E"
+        app:showAsAction="always">
+    </item>
+    <item android:id="@+id/Help"
+        android:title="Giúp đỡ"
+        app:showAsAction="withText">
+    </item>
+
+    <item android:id="@+id/Contact"
+        android:title="Liên hệ với chúng tôi"
+        app:showAsAction="withText">
+        <menu>
+            <item android:id="@+id/Email"
+                android:title="Email">
+            </item>
+
+            <item android:id="@+id/Facebook"
+                android:title="Facebook">
+            </item>
+
+            <item android:id="@+id/Telephone"
+                android:title="Telephone (24/7)">
+            </item>
+        </menu>
+    </item>
+</menu>

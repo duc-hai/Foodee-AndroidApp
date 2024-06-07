@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".activity.CompleteOrder">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Foodee"
+        app:titleTextColor="#fff"
+        android:background="#03A9F4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_check_circle_24"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#03A9F4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt hàng thành công"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:textSize="45px"/>
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/gif"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:textColor="#333"
+        android:textSize="35px"
+        android:text="Chúng tôi đang chuẩn bị đơn hàng và sẽ giao đến bạn trong thời gian nhanh nhất. Cảm ơn bạn đã tin tưởng lựa chọn dịch vụ của chúng tôi."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trang chủ"
+            android:background="@drawable/button"
+            android:backgroundTint="#03A9F4"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:textSize="30px"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnWatchOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đơn mua"
+            android:background="@drawable/button"
+            android:backgroundTint="#03A9F4"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:textSize="30px"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/layout_cart"
+        android:outlineSpotShadowColor="#03A9F4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:id="@+id/ivImage"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:src="@drawable/bun_dau" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvFoodName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bún đậu mắm tôm"
+                    android:textSize="30px"
+                    android:textColor="#4A3E3E"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tvFoodPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá: 40000VND"
+                    android:textSize="25px"
+                    android:textColor="#03A9F4"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btnMinusAmount"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        android:focusable="false"
+                        android:text="-"
+                        android:textAlignment="center"
+                        android:textColor="#333"
+                        android:textSize="30px" />
+
+                    <Button
+                        android:id="@+id/btnAmountCart"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="#333"
+                        android:textSize="25px" />
+
+                    <Button
+                        android:id="@+id/btnAddAmount"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        android:focusable="false"
+                        android:text="+"
+                        android:textAlignment="center"
+                        android:textColor="#333"
+                        android:textSize="30px" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/ibDelete"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:backgroundTint="#DD2E20"
+                android:background="@drawable/ic_baseline_delete_24"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nav_view">
+    <group android:checkableBehavior="single">
+        <item android:title="Tài khoản">
+            <menu>
+                <item
+                    android:id="@+id/nav_dangnhap"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    android:title="Đăng nhập" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_baseline_login_24"
+                    android:title="Đăng xuất" />
+            </menu>
+        </item>
+
+        <item android:title="Thiết lập ảnh hồ sơ">
+            <menu>
+                <item
+                    android:id="@+id/nav_camera"
+                    android:icon="@drawable/ic_baseline_camera_alt_24"
+                    android:title="Chụp ảnh" />
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/ic_baseline_perm_media_24"
+                    android:title="Thư viện" />
+            </menu>
+        </item>
+        <item android:title="Khác">
+            <menu>
+                <item
+                    android:id="@+id/nav_rate"
+                    android:icon="@drawable/ic_baseline_star_24"
+                    android:title="Đánh giá app" />
+            </menu>
+        </item>
+    </group>
+</menu>

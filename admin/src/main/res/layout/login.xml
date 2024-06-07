@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1DA1F2"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.admin.activity.Signin"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="7"
+        android:src="@drawable/logo_food" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Lưu ý ! Chức năng này chỉ dành cho quản lý cửa hàng"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#CF0931"
+        android:layout_weight="2"/>
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_gravity="center"
+
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edtAdminUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/email_edit"
+            android:hint="Tên đăng nhập"
+            android:textColorHint="#ccc"
+            android:padding="10dp"
+            android:textColor="#333"
+            android:layout_marginRight="10dp"
+            android:textSize="30px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/edtAdminPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/email_edit"
+            android:hint="Mật khẩu"
+            android:textColor="#333"
+            android:textSize="30px"
+            android:textColorHint="#ccc"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="textPassword"/>
+        <Button
+            android:id="@+id/btnAdminSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_button"
+            android:text="Đăng nhập"
+            android:textSize="30px"
+            android:textAllCaps="false"
+            android:textColor="#1DA1F2" />
+    </LinearLayout>
+</LinearLayout>
+
